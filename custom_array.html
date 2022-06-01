@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    class custom{
+        constructor(){
+            this.length=0;
+            this.stack=[];
+        }
+        push(el){
+            this.stack[this.length]=el;
+            this.length++
+        }
+        peek(){
+            return this.stack[this.length-1]
+        }
+        pop(){
+            this.stack.pop()
+            this.length--
+        }
+    }
+    let s1=new custom();
+    
+    s1.push(12)
+    s1.push(24)
+    s1.push(36)//-------------push()--------   
+    s1.pop()//---------pop()--------
+    console.log(s1.peek());//--------top()-------
+    
+    console.log(s1.stack)//----------print()-------
+    console.log(s1.stack.reverse())//---------reverse()-------
+    
+    console.log(s1.stack.length)//--------size--------
+
+    
+</script>
+
